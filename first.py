@@ -6,4 +6,4 @@ app = Flask(__name__)
 def lw():
 	return 'I am Abdul Muhafeez'
 
-app.run(host='0.0.0.0')
+app.run(host='0.0.0.0',port=5000)
