@@ -5,3 +5,4 @@ RUN yum install python3 -y python3-pip && pip3 install flask
 COPY first.py /app.py
 
 CMD ["python3","/app.py"]
+CMD ["pip3","pytest"]
