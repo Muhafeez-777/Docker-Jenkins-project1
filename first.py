@@ -2,8 +2,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/info')
 def lw():
-	return 'I am Abdul Muhafeez'
+    return 'Hello from me!'
+@app.route('/info')
+def mom():
+	return lw
 
 app.run(host='0.0.0.0',port=5000)
