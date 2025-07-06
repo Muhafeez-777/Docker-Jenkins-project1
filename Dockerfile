@@ -1,8 +1,7 @@
 FROM redhat/ubi8
 
-RUN yum install python3 -y python3-pip && pip3 install flask
+RUN yum install -y python3 python3-pip && pip3 install flask pytest
 
 COPY first.py /app.py
 
 CMD ["python3","/app.py"]
-CMD ["pip3","pytest"]
